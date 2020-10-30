@@ -1,0 +1,26 @@
+
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "032027",
+    "database": "nwl",
+    "synchronize": true,    
+    "logging": true,
+    "autoLoadEntities": true,
+    "entities": [
+       "./src/models/*.ts"
+    ],
+    "migrations": [
+       "./src/database/migrations/*.ts"
+    ],
+    "subscribers": [
+     "./src/subscriber/**/*.ts"
+    ],
+    "cli": {
+      "entitiesDir": "src/models",
+        "migrationsDir": "./src/database/migrations"
+    }
+    
+ }
